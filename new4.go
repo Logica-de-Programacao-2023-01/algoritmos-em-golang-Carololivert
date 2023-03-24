@@ -1,10 +1,17 @@
 package main
 
-func main() {
-	var soma [6]float64
-	var x float64
-	soma = soma + x
-	quantidade++
+import "fmt"
 
-	media :=
+func main() {
+	arr := [6]float64{5.2, 7.8, 2.6, 5.3, 4.7, 8.2}
+	var soma float64
+
+	for _, x := range arr {
+		soma = +x
+	}
+
+	media := soma / float64(len(arr))
+
+	fmt.Println("a media é de", media)
 }
+
